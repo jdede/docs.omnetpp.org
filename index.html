@@ -10,6 +10,8 @@
         <meta name="description" content="Docmentation for the OMNeT++ Simulator">
       
       
+        <link rel="canonical" href="http://tutorials.omnetpp.org/">
+      
       
         <meta name="author" content="OMNeT++ Team">
       
@@ -29,7 +31,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       
-        <link rel="shortcut icon" href="/assets/images/favicon.png">
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.12.1">
     
@@ -39,12 +41,37 @@
       
     
     
-      <script src="/assets/javascripts/modernizr-e826f8942a.js"></script>
     
+      <script src="./assets/javascripts/modernizr-e826f8942a.js"></script>
     
-      <link rel="stylesheet" href="/assets/stylesheets/application-04ea671600.css">
+    <script>
+    // handle <a srcfile></a> references to source files
+    document.addEventListener("DOMContentLoaded", function (event) {
+        $('a[srcfile]').each(function(i) {
+            var srcref = $(this).attr('srcfile');
+            var name = srcref.replace(/.*\//g, "");
+            $(this).text(name);
+            $(this).attr('href', '/showfile/?url='+srcref);
+            $(this).attr('target', '_blank');
+        });
+    });
+    // function th show a full size image when clicked ona thumbnail
+    imageFullSizeZoom = function(img){
+        img = $(img);
+        let fullSizeSrc = img.attr('src').replace(/.thumb.jpg$/, '.png');
+
+        $(document.body).append(
+        '<div class="fullscreenimgshade" onclick="$(this).remove();">' +
+            '<img src="' + fullSizeSrc + '" class="fullscreenimg"/>' +
+        '</div>'
+        );
+    };
+    </script>
+
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application-04ea671600.css">
       
-        <link rel="stylesheet" href="/assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="./assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -58,13 +85,13 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="/stylesheets/omnetpp-docs.css">
+      <link rel="stylesheet" href="./stylesheets/omnetpp-docs.css">
     
-      <link rel="stylesheet" href="/stylesheets/rainbow.css">
+      <link rel="stylesheet" href="./stylesheets/rainbow.css">
     
-      <link rel="stylesheet" href="/stylesheets/rainbow.linenumbers.theme.css">
+      <link rel="stylesheet" href="./stylesheets/rainbow.linenumbers.theme.css">
     
-      <link rel="stylesheet" href="/stylesheets/jupyter.css">
+      <link rel="stylesheet" href="./stylesheets/jupyter.css">
     
     
   </head>
@@ -102,6 +129,8 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
+            
+              
             
             OMNeT++ Documentation
           
@@ -211,11 +240,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="/" title="OMNeT++ Documentation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="." title="OMNeT++ Documentation" class="md-nav__link md-nav__link--active">
       OMNeT++ Documentation
     </a>
+    
   </li>
 
     
@@ -263,7 +301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/" title="Introduction" class="md-nav__link">
+    <a href="tutorials/tictoc/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -275,7 +313,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part1/" title="Getting Started" class="md-nav__link">
+    <a href="tutorials/tictoc/part1/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -287,7 +325,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part2/" title="Running the Simulation" class="md-nav__link">
+    <a href="tutorials/tictoc/part2/" title="Running the Simulation" class="md-nav__link">
       Running the Simulation
     </a>
   </li>
@@ -299,7 +337,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part3/" title="Enhancing the 2-node TicToc" class="md-nav__link">
+    <a href="tutorials/tictoc/part3/" title="Enhancing the 2-node TicToc" class="md-nav__link">
       Enhancing the 2-node TicToc
     </a>
   </li>
@@ -311,7 +349,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part4/" title="Turning it Into a Real Network" class="md-nav__link">
+    <a href="tutorials/tictoc/part4/" title="Turning it Into a Real Network" class="md-nav__link">
       Turning it Into a Real Network
     </a>
   </li>
@@ -323,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part5/" title="Adding Statistics Collection" class="md-nav__link">
+    <a href="tutorials/tictoc/part5/" title="Adding Statistics Collection" class="md-nav__link">
       Adding Statistics Collection
     </a>
   </li>
@@ -335,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part6/" title="Visualizing the Results" class="md-nav__link">
+    <a href="tutorials/tictoc/part6/" title="Visualizing the Results" class="md-nav__link">
       Visualizing the Results
     </a>
   </li>
@@ -347,7 +385,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/part7/" title="Parameter Studies" class="md-nav__link">
+    <a href="tutorials/tictoc/part7/" title="Parameter Studies" class="md-nav__link">
       Parameter Studies
     </a>
   </li>
@@ -359,7 +397,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/tictoc/conclusion/" title="Closing words" class="md-nav__link">
+    <a href="tutorials/tictoc/conclusion/" title="Closing words" class="md-nav__link">
       Closing words
     </a>
   </li>
@@ -395,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/" title="Introduction" class="md-nav__link">
+    <a href="tutorials/cloud/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -407,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page1/" title="Concepts" class="md-nav__link">
+    <a href="tutorials/cloud/page1/" title="Concepts" class="md-nav__link">
       Concepts
     </a>
   </li>
@@ -419,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page2/" title="Implementation" class="md-nav__link">
+    <a href="tutorials/cloud/page2/" title="Implementation" class="md-nav__link">
       Implementation
     </a>
   </li>
@@ -431,7 +469,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page4/" title="Deploying on AWS" class="md-nav__link">
+    <a href="tutorials/cloud/page4/" title="Deploying on AWS" class="md-nav__link">
       Deploying on AWS
     </a>
   </li>
@@ -443,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page5/" title="Trying It Out" class="md-nav__link">
+    <a href="tutorials/cloud/page5/" title="Trying It Out" class="md-nav__link">
       Trying It Out
     </a>
   </li>
@@ -455,7 +493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page6/" title="Examining the Code" class="md-nav__link">
+    <a href="tutorials/cloud/page6/" title="Examining the Code" class="md-nav__link">
       Examining the Code
     </a>
   </li>
@@ -467,7 +505,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/cloud/page7/" title="Potential Improvements, Alternatives" class="md-nav__link">
+    <a href="tutorials/cloud/page7/" title="Potential Improvements, Alternatives" class="md-nav__link">
       Potential Improvements, Alternatives
     </a>
   </li>
@@ -484,7 +522,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/tutorials/pandas/" title="Result Analysis with Python" class="md-nav__link">
+    <a href="tutorials/pandas/" title="Result Analysis with Python" class="md-nav__link">
       Result Analysis with Python
     </a>
   </li>
@@ -501,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/showfile/" title="Source File Listing" class="md-nav__link">
+    <a href="showfile/" title="Source File Listing" class="md-nav__link">
       Source File Listing
     </a>
   </li>
@@ -514,12 +552,39 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
-
+                
+                
+                <h1 id="omnet-documentation">OMNeT++ Documentation<a class="headerlink" href="#omnet-documentation" title="Permanent link">&para;</a></h1>
+<p>Welcome to the OMNeT++ Tutorials website</p>
+<p>The following tutorials are available:</p>
+<ul>
+<li><a href="tutorials/tictoc/">Learn OMNeT++ with TicToc</a></li>
+<li><a href="tutorials/cloud/">Running Simulation Campaigns in the Cloud</a></li>
+<li><a href="tutorials/pandas/">Result Analysis with Python</a></li>
+</ul>
+                
+                  
+                
+              
               
                 
               
@@ -530,6 +595,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="tutorials/tictoc/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -566,30 +652,30 @@
       
     </div>
     
-      <script src="/assets/javascripts/application-946997f430.js"></script>
+      <script src="./assets/javascripts/application-946997f430.js"></script>
       
       
-      <script>app.initialize({version:"0.16.3",url:{base:""}})</script>
+      <script>app.initialize({version:"0.16.3",url:{base:"."}})</script>
       
-        <script src="/javascripts/jquery-3.2.1.min.js"></script>
+        <script src="./javascripts/jquery-3.2.1.min.js"></script>
       
-        <script src="/javascripts/jupyter-output.js"></script>
+        <script src="./javascripts/jupyter-output.js"></script>
       
-        <script src="/javascripts/quoting.js"></script>
+        <script src="./javascripts/quoting.js"></script>
       
-        <script src="/javascripts/rainbow-custom.min.js"></script>
+        <script src="./javascripts/rainbow-custom.min.js"></script>
       
-        <script src="/javascripts/rainbow.linenumbers.min.js"></script>
+        <script src="./javascripts/rainbow.linenumbers.min.js"></script>
       
-        <script src="/javascripts/rainbow-ini.js"></script>
+        <script src="./javascripts/rainbow-ini.js"></script>
       
-        <script src="/javascripts/rainbow-ned.js"></script>
+        <script src="./javascripts/rainbow-ned.js"></script>
       
-        <script src="/javascripts/rainbow-yaml.js"></script>
+        <script src="./javascripts/rainbow-yaml.js"></script>
       
-        <script src="/javascripts/rainbow-dockerfile.js"></script>
+        <script src="./javascripts/rainbow-dockerfile.js"></script>
       
-        <script src="/javascripts/rainbow-html.js"></script>
+        <script src="./javascripts/rainbow-html.js"></script>
       
     
     

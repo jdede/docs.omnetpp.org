@@ -1,6 +1,16 @@
 {
     "docs": [
         {
+            "location": "/", 
+            "text": "OMNeT++ Documentation\n\n\nWelcome to the OMNeT++ Tutorials website\n\n\nThe following tutorials are available:\n\n\n\n\nLearn OMNeT++ with TicToc\n\n\nRunning Simulation Campaigns in the Cloud\n\n\nResult Analysis with Python", 
+            "title": "OMNeT++ Documentation"
+        }, 
+        {
+            "location": "/#omnet-documentation", 
+            "text": "Welcome to the OMNeT++ Tutorials website  The following tutorials are available:   Learn OMNeT++ with TicToc  Running Simulation Campaigns in the Cloud  Result Analysis with Python", 
+            "title": "OMNeT++ Documentation"
+        }, 
+        {
             "location": "/tutorials/tictoc/", 
             "text": "Introduction\n\n\nThis tutorial to guides you through building and working\nwith an example simulation model, showing you along the way some\nof the commonly used OMNeT++ features.\n\n\nThe tutorial is based on the Tictoc example simulation, which you\ncan find in the \nsamples/tictoc\n directory of your\nOMNeT++ installation, so you can try out immediately how\nthe examples work. However, you'll find the tutorial much more useful\nif you actually carry out the steps described here.\nWe assume that you have a good C++ knowledge, and you are in general\nfamiliar with C/C++ development (editing source files, compiling, debugging etc.)\nTo make the examples easier to follow, all source code in here is\ncross-linked to the OMNeT++ API documentation.\n\n\nThis document and the TicToc model are an expanded version of\nthe original TicToc tutorial from Ahmet Sekercioglu (Monash University).", 
             "title": "Introduction"
