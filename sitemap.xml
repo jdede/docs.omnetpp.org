@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>http://tutorials.omnetpp.org//</loc>
-     <lastmod>2017-11-12</lastmod>
+     <loc>http://docs.omnetpp.org//</loc>
+     <lastmod>2017-11-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,20 +12,20 @@
     
         
     <url>
-     <loc>http://tutorials.omnetpp.org/</loc>
+     <loc>http://docs.omnetpp.org/</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://tutorials.omnetpp.org/</loc>
+     <loc>http://docs.omnetpp.org/</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://tutorials.omnetpp.org//tutorials/pandas/</loc>
-     <lastmod>2017-11-12</lastmod>
+     <loc>http://docs.omnetpp.org//tutorials/pandas/</loc>
+     <lastmod>2017-11-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -33,8 +33,8 @@
 
     
     <url>
-     <loc>http://tutorials.omnetpp.org//showfile/</loc>
-     <lastmod>2017-11-12</lastmod>
+     <loc>http://docs.omnetpp.org//showfile/</loc>
+     <lastmod>2017-11-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
