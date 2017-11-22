@@ -643,7 +643,7 @@
         {
             "location": "/showfile/", 
             "text": "", 
-            "title": "Source Viewer"
+            "title": "_Source Browser_"
         }
     ]
 }
