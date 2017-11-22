@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OMNeT++ Documentation\n\n\nWelcome to the OMNeT++ Tutorials website\n\n\nThe following tutorials are available:\n\n\n\n\nLearn OMNeT++ with TicToc\n\n\nRunning Simulation Campaigns in the Cloud\n\n\nResult Analysis with Python", 
-            "title": "OMNeT++ Documentation"
+            "text": "OMNeT++ Tutorials\n\n\n\n\nTicToc\n tutorial introduces the basic modeling concepts in OMNeT++.\n\n\nRunning Simulation Campaigns in the Cloud\n\n\nResult Analysis with Python", 
+            "title": "Overview"
         }, 
         {
-            "location": "/#omnet-documentation", 
-            "text": "Welcome to the OMNeT++ Tutorials website  The following tutorials are available:   Learn OMNeT++ with TicToc  Running Simulation Campaigns in the Cloud  Result Analysis with Python", 
-            "title": "OMNeT++ Documentation"
+            "location": "/#omnet-tutorials", 
+            "text": "TicToc  tutorial introduces the basic modeling concepts in OMNeT++.  Running Simulation Campaigns in the Cloud  Result Analysis with Python", 
+            "title": "OMNeT++ Tutorials"
         }, 
         {
             "location": "/tutorials/tictoc/", 
@@ -643,7 +643,7 @@
         {
             "location": "/showfile/", 
             "text": "", 
-            "title": "Source File Listing"
+            "title": "Source Viewer"
         }
     ]
 }
