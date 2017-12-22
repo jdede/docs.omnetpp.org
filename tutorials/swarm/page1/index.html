@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -20,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copied to clipboard">
       
-        <meta name="lang:search.languages" content="">
+        <meta name="lang:search.language" content="en">
       
         <meta name="lang:search.result.none" content="No matching documents">
       
@@ -30,10 +33,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      
-        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.12.1">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.5">
     
     
       
@@ -41,8 +42,12 @@
       
     
     
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.bcabdff3.css">
+      
     
-      <script src="../../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     <script>
     // handle <a srcfile></a> references to source files
@@ -69,16 +74,7 @@
     </script>
 
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-04ea671600.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-23f75ab9c7.palette.css">
-      
-    
-    
-      
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -96,10 +92,7 @@
     
   </head>
   
-  
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body>
   
     <svg class="md-svg">
       <defs>
@@ -119,7 +112,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://docs.omnetpp.org/" title="OMNeT++ Tutorials" class="md-header-nav__button md-logo">
           
-            <i class="md-icon md-icon--home"></i>
+            <i class="md-icon"></i>
           
         </a>
       </div>
@@ -127,23 +120,24 @@
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-              
-                <span class="md-header-nav__parent">
-                  Running INET Simulation Campaigns on AWS
-                </span>
-              
+              <span class="md-header-nav__topic">
+                OMNeT++ Tutorials
+              </span>
+              <span class="md-header-nav__topic">
+                Installation and Usage
+              </span>
             
-            Installation and Usage
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
@@ -164,6 +158,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -175,7 +170,7 @@
   
 
 
-  <a href="https://github.com/omnetpp/omnetpp-docs" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/omnetpp/omnetpp-docs/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -197,6 +192,7 @@
     
     <div class="md-container">
       
+        
       
       
       <main class="md-main">
@@ -223,7 +219,7 @@
   
 
 
-  <a href="https://github.com/omnetpp/omnetpp-docs" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/omnetpp/omnetpp-docs/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -640,6 +636,40 @@
     Usage
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-simulations" title="Running Simulations" class="md-nav__link">
+    Running Simulations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-restarting-and-deleting-the-swarm" title="Stopping, Restarting and Deleting the Swarm" class="md-nav__link">
+    Stopping, Restarting and Deleting the Swarm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-the-status-manually" title="Checking the Status Manually" class="md-nav__link">
+    Checking the Status Manually
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback-and-discussion" title="Feedback and Discussion" class="md-nav__link">
+    Feedback and Discussion
+  </a>
+  
 </li>
       
       
@@ -755,6 +785,40 @@
     Usage
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-simulations" title="Running Simulations" class="md-nav__link">
+    Running Simulations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-restarting-and-deleting-the-swarm" title="Stopping, Restarting and Deleting the Swarm" class="md-nav__link">
+    Stopping, Restarting and Deleting the Swarm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-the-status-manually" title="Checking the Status Manually" class="md-nav__link">
+    Checking the Status Manually
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback-and-discussion" title="Feedback and Discussion" class="md-nav__link">
+    Feedback and Discussion
+  </a>
+  
 </li>
       
       
@@ -771,37 +835,61 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/omnetpp/omnetpp-docs/edit/master/docs/tutorials/swarm/page1.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                   <h1>Installation and Usage</h1>
                 
-                <p>In this section we show you how to deploy and use the tools to run simulations on AWS.</p>
+                <p>In this page we show you how to deploy and use the tools to run simulations on AWS.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The solution and the toolset presented here are currently experimental, and we are collecting
+feedback about it. Please let us know if you are interested, and if you try it,
+we request you to report bugs, errors or any difficulty you experience in using it.
+We'd also be happy to hear about successful usage.
+Use the bugtracker link at the bottom of this page for feedback.</p>
+</div>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <p>Install Docker, python3 and pip3 on your local computer. We recommend that you use Linux.
 A working OMNeT++ installation, and a checked-out INET (fork) git repository is also necessary.</p>
 <h3 id="deployment-on-aws">Deployment on AWS<a class="headerlink" href="#deployment-on-aws" title="Permanent link">&para;</a></h3>
 <h4 id="creating-an-aws-account">Creating an AWS Account<a class="headerlink" href="#creating-an-aws-account" title="Permanent link">&para;</a></h4>
-<p>To access any web service AWS offers, you must first create an AWS account at <a href="http://aws.amazon.com">http://aws.amazon.com</a>. An AWS account is simply an Amazon.com account that is enabled to use AWS products; you can use an existing Amazon.com account login and password when creating the AWS account. (<a href="http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/AboutAWSAccounts.html">source</a>)
-If you already have one, just log in to the <a href="https://console.aws.amazon.com">AWS Management Console</a> with it, and ignore the rest of this section.
-Otherwise, follow the instructions here: <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html">AWS registration</a></p>
+<p>To access any web service AWS offers, you must first create an AWS account at <a href="http://aws.amazon.com">http://aws.amazon.com</a>.
+If you already have one, just log in to the <a href="https://console.aws.amazon.com">AWS Management Console</a> with it;
+otherwise, follow the instructions here: <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html">AWS registration</a>.</p>
+<p>During registration, you will have to enter your credit card number. Amazon will charge it with a small amount (1 USD) to verify it.</p>
 <h4 id="creating-the-access-policy">Creating the Access Policy<a class="headerlink" href="#creating-the-access-policy" title="Permanent link">&para;</a></h4>
 <p>On the AWS Management Console, navigate to the IAM Service configuration page, and switch to <strong>Policies</strong>. Or just
-click <a href="https://console.aws.amazon.com/iam/home#/policies">this link</a>, it will take you there.
-Click the <strong>Create policy</strong> button. Switch over to the <strong>JSON</strong> tab. Paste the contents of <a href="../code/docker-for-aws-policy.json">this file</a> into the entry field.</p>
-<p>This policy is the superset of the officially published one on the <a href="https://docs.docker.com/docker-for-aws/iam-permissions/">Docker for AWS website</a>. It had to be slightly altered to make it fit into the default size limit, so it grants slightly more privileges than necessary.
-It also adds the ec2:CreateKeyPair permission, and the cloudwatch:PutMetricAlarm. This is necessary to automate the connection to the swarm, and the shutting down of the machines after they have been idle for a while.</p>
+click <a href="https://console.aws.amazon.com/iam/home#/policies">this link</a>, it will take you there.</p>
+<p>Click the <strong>Create policy</strong> button. Switch over to the <strong>JSON</strong> tab.
+Paste the contents of <a href="../code/docker-for-aws-policy.json">this file</a> into the entry field, replacing its entire contents.</p>
+<p>This policy is the superset of the officially published one on the <a href="https://docs.docker.com/docker-for-aws/iam-permissions/">Docker for AWS website</a>.
+It had to be slightly altered to make it fit into the default size limit, so it grants slightly more privileges than necessary.
+It also adds the <code class="codehilite"><span class="n">ec2</span><span class="o">:</span><span class="n">CreateKeyPair</span></code> and the <code class="codehilite"><span class="n">cloudwatch</span><span class="o">:</span><span class="n">PutMetricAlarm</span></code> permissions.
+These are necessary to automate the connection to the swarm, and the shutting down of the machines after they have been idle for a while.</p>
 <p>Click <strong>Review policy</strong>. Enter a <strong>Name</strong> for the new policy, for example "inet-docker-swarm-policy", then click <strong>Create policy</strong>.</p>
 <h4 id="creating-the-user">Creating the User<a class="headerlink" href="#creating-the-user" title="Permanent link">&para;</a></h4>
 <p>Switch over to <a href="https://console.aws.amazon.com/iam/home#/users"><strong>Users</strong></a> and click <strong>Add user</strong>.</p>
 <p>Enter a <strong>User name</strong>, for example "inet-swarm-cli", and tick the checkbox next to <strong>Programmatic access</strong>. Leave the other checkbox unchecked. Click <strong>Next: Permissions</strong>. Select <strong>Attach existing policies directly</strong>, search for the name of the policy we just created <em>(by typing in a part of it, like "inet")</em>, then check the checkboy next to it, and click <strong>Next: Review</strong> at the bottom. If everything looks alright, click <strong>Create user</strong>.</p>
 <p>As the final step of user creation, save the <strong>Access key ID</strong> and the <strong>Secret access key</strong>, somewhere safe. It's a good idea that you do this by clicking <strong>Download .csv</strong>. This will let you download this information into a simple text file, so you won't make any mistakes while copy-pasting them.</p>
-<p>Also, read the notice in the green area, particularly this part: "This is the last time these credentials will be available to download. However, you can create new credentials at any time.". This means that if you don't save the key ID and the secret key now, you will have to delete this user and create a new one.</p>
-<p><strong>Important!</strong> Keep these strings private, since these grant access to your account, without the need for your password or other credentials <em>(of course, only until you delete this user, or revoke its permissions)</em>. Treat them with similar caution as you do your passwords.</p>
+<p>Also, read the notice in the green area, particularly this part:
+<em>"This is the last time these credentials will be available to download. However, you can create new credentials at any time."</em>
+This means that if you don't save the key ID and the secret key now, you will have to delete this user and create a new one.</p>
+<div class="admonition caution">
+<p class="admonition-title">Important</p>
+<p>Keep these strings private, since these grant access to your account, without the need for your password or other credentials.
+(Of course, only until you delete this user, or revoke its permissions.) Treat them with similar caution as you do your passwords.</p>
+</div>
 <h4 id="configuring-cli-access">Configuring CLI Access<a class="headerlink" href="#configuring-cli-access" title="Permanent link">&para;</a></h4>
 <p>To let your computer manage and use your AWS account, we have to configure it with the credentials of the user you just created for it.
 First we need to install the AWS CLI utility using <code class="codehilite">pip</code>:</p>
-<p><code class="codehilite">$ pip3 install --upgrade awscli</code></p>
+<div class="codehilite"><pre><span></span>$ pip3 install --user --upgrade awscli
+</pre></div>
+
 <p>Then start the configuration:</p>
-<p><code class="codehilite">$ aws configure</code></p>
+<div class="codehilite"><pre><span></span>$ aws configure
+</pre></div>
+
 <p>If at first you get <code class="codehilite"><span class="n">aws</span><span class="o">:</span> <span class="n">command</span> <span class="n">not</span> <span class="n">found</span></code>, or <code class="codehilite">The program &#39;aws&#39; is currently not installed</code>, try running <code class="codehilite">~/.local/bin/aws configure</code> instead.</p>
 <p>When asked, enter the <strong>Access Key ID</strong>, then the <strong>Secret Access Key</strong>. They will be recorded into an INI file, which is by default at <code class="codehilite">~/.aws/credentials</code>.</p>
 <p>For <strong>Default region</strong>, choose the one closest to you geographically. You can find the list of region codes and their locations
@@ -812,32 +900,94 @@ You can find more info about Regions and Availability Zones
 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">here</a>, and
 <a href="https://aws.amazon.com/about-aws/global-infrastructure/">here</a>.</p>
 <p>You can leave <strong>Default output format</strong> empty.</p>
-<p><strong>Note:</strong> Once all this information is entered correctly, any software you run on your computer has access to your AWS account, as permitted by the policy attached to the configured user. Remove (rename) the <code class="codehilite">credentials</code> file mentioned above to (temporarily) disable access. The proper way to completely and permanently revoke this access is to delete the IAM User we just created.</p>
+<div class="admonition caution">
+<p class="admonition-title">Important</p>
+<p>Once all this information is entered correctly, any software you run on your computer has access
+to your AWS account, as permitted by the policy attached to the configured user.
+Remove (rename) the <code class="codehilite">credentials</code> file mentioned above to (temporarily) disable access.
+The proper way to completely and permanently revoke this access is to delete the IAM User we just created.</p>
+</div>
 <p>From this point on in this tutorial, we won't need the AWS Management Console to initiate any actions. However, if you wish, you can use it to observe and check for yourself what the <code class="codehilite">aws_swarm_tool.py</code> script does.</p>
 <h3 id="installing-local-client-scripts">Installing Local Client Scripts<a class="headerlink" href="#installing-local-client-scripts" title="Permanent link">&para;</a></h3>
 <p>Having set up your AWS account and access to it, we can proceed by installing the client-side tools for submitting simulations.</p>
 <p>First, install the required Python libraries:</p>
-<p><code class="codehilite">$ pip3 install boto3 psutil pymongo redis rq</code></p>
-<p>Save the following files into <code class="codehilite">~/bin</code>: <a href="../code/aws_swarm_tool.py">aws_swarm_tool.py</a>,
-<a href="../code/docker-compose.yml">docker-compose.yml</a>, <a href="../code/inet_runall_swarm.py">inet_runall_swarm.py</a></p>
-<p>Issue the following commands:</p>
-<p><code class="codehilite">$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/bin</code></p>
-<p><code class="codehilite">$ aws_swarm_tool.py init</code></p>
+<div class="codehilite"><pre><span></span>$ pip3 install --user --upgrade boto3 psutil pymongo redis rq
+</pre></div>
+
+<p>Save the following files into <code class="codehilite">~/.local/bin</code>:</p>
+<ul>
+<li><a href="../code/aws_swarm_tool.py">aws_swarm_tool.py</a></li>
+<li><a href="../code/docker-compose.yml">docker-compose.yml</a></li>
+<li><a href="../code/inet_runall_swarm.py">inet_runall_swarm.py</a></li>
+</ul>
+<p>Make the script files executable, and put <code class="codehilite">~/.local/bin</code> into the PATH if it does not already contain it:</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> ~/.local/bin<span class="p">;</span> chmod +x aws_swarm_tool.py inet_runall_swarm.py
+$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
+</pre></div>
+
+<p>Run the following command to set up the virtual machines and necessary infrastructure on AWS,
+and perform local configuration for accessing it:</p>
+<div class="codehilite"><pre><span></span>$ aws_swarm_tool.py init
+</pre></div>
+
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>If the Swarm is not already running, you have to start it up again:</p>
-<p><code class="codehilite">$ aws_swarm_tool.py resume</code></p>
-<p>Change into the directory under INET (your INET fork) that contains your simulation.</p>
+<h3 id="running-simulations">Running Simulations<a class="headerlink" href="#running-simulations" title="Permanent link">&para;</a></h3>
+<p>Change into the directory under INET (or your INET fork) that contains your simulation.</p>
 <p>IMPORTANT: Your INET installation should be a checked-out copy of a GitHub repository with all changes pushed up to GitHub,
-because our tool only sends the Git URL of your project and the hash of the currently checked-out commit to AWS, not the full source code.</p>
-<p><code class="codehilite">$ <span class="nb">cd</span> examples/inet/ber</code></p>
-<p>Enter the command for running the simulations, but replace <code class="codehilite">inet</code> in it with our <code class="codehilite">inet_runall_swarm.py</code> program:</p>
-<p><code class="codehilite">$ inet_runall_swarm.py -c ber-flavour-experiment</code></p>
-<p>The <code class="codehilite">inet_runall_swarm.py</code> tool will expand the list of simulation runs to be executed, submits them to the job queue, and wait for the jobs to finish.
+because our tool only sends the Git URL of your project and the hash of the currently checked-out commit to AWS, not the full source code.
+Additionally, OMNeT++ should be ready to use, with its tools (like <code class="codehilite">opp_run</code> or <code class="codehilite">opp_run_dbg</code>) accessible as commands.</p>
+<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> examples/inet/ber
+</pre></div>
+
+<p>Enter the command for running the simulations, using our <code class="codehilite">inet_runall_swarm.py</code> program instead of <code class="codehilite">./run</code> or <code class="codehilite">inet</code>:</p>
+<div class="codehilite"><pre><span></span>$ inet_runall_swarm.py -c ber-flavour-experiment
+</pre></div>
+
+<p>The <code class="codehilite">inet_runall_swarm.py</code> tool will expand the list of simulation runs to be executed, submit them to the job queue, and wait for the jobs to finish.
 The results will be downloaded automatically into the <code class="codehilite">results</code> folder.</p>
 <p>You can monitor progress at <a href="http://localhost:9181/">http://localhost:9181/</a> which displays the content of the job queue.</p>
-<p>If you are done with it, you can stop the machines:</p>
-<p><code class="codehilite">$ aws_swarm_tool.py halt</code></p>
-<p>They will shut down automatically after an hour of being idle.</p>
+<h3 id="stopping-restarting-and-deleting-the-swarm">Stopping, Restarting and Deleting the Swarm<a class="headerlink" href="#stopping-restarting-and-deleting-the-swarm" title="Permanent link">&para;</a></h3>
+<p>Once you are done, you can stop the machines:</p>
+<div class="codehilite"><pre><span></span>$ aws_swarm_tool.py halt
+</pre></div>
+
+<p>They will also shut down automatically after an hour of being idle.</p>
+<div class="admonition caution">
+<p class="admonition-title">Important</p>
+<p>AWS usage is billed by uptime, i.e. you are charged for the time the Swarm is up and running,
+regardless whether you are actually using it for simulations or not. Our tool configures AWS
+to halt the Swarm after one hour of idle time, but for extra safety, double-check that the
+Swarm has been stopped after you have finished working with it. WE ARE NOT RESPONSIBLE FOR
+EXTRA COSTS CAUSED BY LEAVING AWS NODES RUNNING. Read on for instructions.</p>
+</div>
+<p>The <code class="codehilite">halt</code> command only shuts down the virtual machine instances, but leaves all other resources intact,
+this way resuming the usage is faster than the initial deployment (with <code class="codehilite">init</code>). These additional
+resources being there inactively do not cost you anything.</p>
+<p>To use the Swarm again, you have to start it up again:</p>
+<div class="codehilite"><pre><span></span>$ aws_swarm_tool.py resume
+</pre></div>
+
+<p>To completely delete the entire Swarm:</p>
+<div class="codehilite"><pre><span></span>$ aws_swarm_tool.py delete
+</pre></div>
+
+<h3 id="checking-the-status-manually">Checking the Status Manually<a class="headerlink" href="#checking-the-status-manually" title="Permanent link">&para;</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Important</p>
+<p>When you do not intend to work with AWS for an extended period of time, you may want to
+double-check manually that the stack on AWS has been stopped indeed, and you are no longer
+being billed for it.</p>
+</div>
+<p>To check the status, select the EC2 service on the AWS Management Console,
+and check the <a href="https://console.aws.amazon.com/ec2/v2/home#Instances">Running Instances</a>.
+If you see instances named <code class="codehilite">inet-Node</code> or <code class="codehilite">inet-Manager</code>, in the <code class="codehilite">running</code> state, the Swarm is active.</p>
+<p>To delete the Swarm manually (if the command-line tool does not work for some reason), go to the
+<a href="https://console.aws.amazon.com/cloudformation/home#/stacks">CloudFormation service page</a> on
+the AWS Management Console. Tick the checkbox next to the <code class="codehilite">inet</code> Stack in the table, then click
+<strong>Actions &gt; Delete Stack</strong>. This should remove all INET-related resources.</p>
+<h2 id="feedback-and-discussion">Feedback and Discussion<a class="headerlink" href="#feedback-and-discussion" title="Permanent link">&para;</a></h2>
+<p>We are looking for any kind of feedback or suggestion you might have regarding this tutorial here:
+<a href="https://github.com/omnetpp/omnetpp-tutorials/issues/3">https://github.com/omnetpp/omnetpp-tutorials/issues/3</a></p>
                 
                   
                 
@@ -923,10 +1073,9 @@ The results will be downloaded automatically into the <code class="codehilite">r
       
     </div>
     
-      <script src="../../../assets/javascripts/application-946997f430.js"></script>
+      <script src="../../../assets/javascripts/application.6cdc17f0.js"></script>
       
-      
-      <script>app.initialize({version:"0.16.3",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"../../.."}})</script>
       
         <script src="../../../javascripts/jquery-3.2.1.min.js"></script>
       
@@ -949,7 +1098,7 @@ The results will be downloaded automatically into the <code class="codehilite">r
     
     
       
-      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-240922-2","docs.omnetpp.org"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-240922-2","docs.omnetpp.org"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
       
     
   </body>

@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -235,11 +235,11 @@ def deploy_app(stack_name="inet"):
     print("Deploying the stack...")
 
     subprocess.call(["docker", "-H", "tcp://localhost:2374", "stack", "up",
-                     "--compose-file", "docker-compose.yml", stack_name])
-
-    print("Waiting for the services to start...")
+                     "--compose-file", os.path.dirname(os.path.realpath(__file__)) + "/docker-compose.yml", stack_name])
 
     """
+    print("Waiting for the services to start...")
+
     # wait for completion by polling the visualizer http service - this does not seem to work
     while True:
         time.sleep(1)
@@ -396,6 +396,7 @@ if __name__ == "__main__":
     if args.command == "init":
         create_add_key_pair()
         create_swarm()
+        connect_to_swarm()
         deploy_app()
     elif args.command == "connect":
         connect_to_swarm()
