@@ -2,8 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "OMNeT++ Tutorials\n\n\n\n\nTicToc\n. An introductory tutorial that guides you through building and working with\n  an example simulation model.\n\n\nResult Analysis with Python\n. This tutorial will walk you through the initial steps of\n  using Python for analysing simulation results, and shows how to do some of the most common tasks.\n\n\nRunning Simulation Campaigns in the Cloud\n. Concepts, ideas and a solution draft\n  for harnessing the power of computing clouds for running simulation campaigns.\n\n\nRunning INET Simulation Campaigns on AWS\n. Presents a minimal but powerful toolset \n  for running INET simulations on Amazon's cloud platform.", 
+            "text": "OMNeT++ Documentation\n\n\nOMNeT++ Tutorials\n\n\n\n\nTicToc\n. An introductory tutorial that guides you through building and working with\n  an example simulation model.\n\n\nResult Analysis with Python\n. This tutorial will walk you through the initial steps of\n  using Python for analysing simulation results, and shows how to do some of the most common tasks.\n\n\nRunning Simulation Campaigns in the Cloud\n. Concepts, ideas and a solution draft\n  for harnessing the power of computing clouds for running simulation campaigns.\n\n\nRunning INET Simulation Campaigns on AWS\n. Presents a minimal but powerful toolset \n  for running INET simulations on Amazon's cloud platform.", 
             "title": "Overview"
+        }, 
+        {
+            "location": "/#omnet-documentation", 
+            "text": "", 
+            "title": "OMNeT++ Documentation"
         }, 
         {
             "location": "/#omnet-tutorials", 
@@ -789,6 +794,16 @@
             "location": "/showfile/", 
             "text": "", 
             "title": "_Source Browser_"
+        }, 
+        {
+            "location": "/tutorials/", 
+            "text": "OMNeT++ Tutorials\n\n\n\n\nTicToc\n. An introductory tutorial that guides you through building and working with\n  an example simulation model.\n\n\nResult Analysis with Python\n. This tutorial will walk you through the initial steps of\n  using Python for analysing simulation results, and shows how to do some of the most common tasks.\n\n\nRunning Simulation Campaigns in the Cloud\n. Concepts, ideas and a solution draft\n  for harnessing the power of computing clouds for running simulation campaigns.\n\n\nRunning INET Simulation Campaigns on AWS\n. Presents a minimal but powerful toolset \n  for running INET simulations on Amazon's cloud platform.", 
+            "title": "_Tutorials_"
+        }, 
+        {
+            "location": "/tutorials/#omnet-tutorials", 
+            "text": "TicToc . An introductory tutorial that guides you through building and working with\n  an example simulation model.  Result Analysis with Python . This tutorial will walk you through the initial steps of\n  using Python for analysing simulation results, and shows how to do some of the most common tasks.  Running Simulation Campaigns in the Cloud . Concepts, ideas and a solution draft\n  for harnessing the power of computing clouds for running simulation campaigns.  Running INET Simulation Campaigns on AWS . Presents a minimal but powerful toolset \n  for running INET simulations on Amazon's cloud platform.", 
+            "title": "OMNeT++ Tutorials"
         }
     ]
 }
